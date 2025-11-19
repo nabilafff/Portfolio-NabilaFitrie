@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Contact - Nabila Fitrie</title>
+        <link rel="stylesheet" href="mystyle.css" />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        />
+    </head>
+    <body>
+        <header>
+            <div class="logo">Nabila Fitrie</div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="resume.html">Resume</a></li>
+                    <li><a href="project.html">Projects</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                </ul>
+            </nav>
+            <a href="contact.html"
+                ><button class="contact-btn">Contact</button></a
+            >
+        </header>
+
+        <main class="contact-page">
+            <h1 class="page-title">Get In Touch</h1>
+            <p class="page-subtitle">
+                Feel free to reach out for collaborations, projects, or just to
+                say hello!
+            </p>
+
+            <div class="contact-container">
+                <!-- Contact Info -->
+                <div class="contact-info">
+                    <h2>Contact Information</h2>
+
+                    <div class="info-item">
+                        <div class="info-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="info-content">
+                            <h3>Email</h3>
+                            <p>nabilafitrie25@gmail.com</p>
+                        </div>
+                    </div>
+
+                    <div class="info-item">
+                        <div class="info-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div class="info-content">
+                            <h3>Phone</h3>
+                            <p>+886 983 538 642</p>
+                        </div>
+                    </div>
+
+                    <div class="info-item">
+                        <div class="info-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="info-content">
+                            <h3>Location</h3>
+                            <address>
+                                Tzu Chi University<br />
+                                No. 701, Zhongyang Rd., Sec. 3<br />
+                                Hualien City, Taiwan 97004
+                            </address>
+                        </div>
+                    </div>
+
+                    <div class="social-links">
+                        <h3>Follow Me</h3>
+                        <div class="social-buttons">
+                            <a
+                                href="https://www.instagram.com/nabilafitriie/"
+                                class="social-btn"
+                            >
+                                <i class="fa-brands fa-instagram"></i>
+                                <span>Instagram</span>
+                            </a>
+                            <a
+                                href="https://www.youtube.com/@nabilafitrie5887"
+                                class="social-btn"
+                            >
+                                <i class="fa-brands fa-youtube"></i>
+                                <span>YouTube</span>
+                            </a>
+                            <a
+                                href="https://www.linkedin.com/in/nabila-fitrie-naia-salsabila-66b28425b/"
+                                class="social-btn"
+                            >
+                                <i class="fa-brands fa-linkedin"></i>
+                                <span>LinkedIn</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Contact Form -->
+                <div class="contact-form-wrapper">
+                    <h2>Send Me a Message</h2>
+                    <form
+                        class="contact-form"
+                        action="mailto:nabilafitrie25@gmail.com"
+                        method="POST"
+                        enctype="text/plain"
+                    >
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input
+                                type="text"
+                                id="name"
+                                name="name"
+                                placeholder="Your name"
+                                required
+                            />
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input
+                                type="email"
+                                id="email"
+                                name="email"
+                                placeholder="your.email@example.com"
+                                required
+                            />
+                        </div>
+
+                        <div class="form-group">
+                            <label for="subject">Subject</label>
+                            <input
+                                type="text"
+                                id="subject"
+                                name="subject"
+                                placeholder="What is this about?"
+                                required
+                            />
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea
+                                id="message"
+                                name="message"
+                                rows="6"
+                                placeholder="Your message here..."
+                                required
+                            ></textarea>
+                        </div>
+
+                        <button type="submit" class="submit-btn">
+                            Send Message
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </main>
+
+        <footer>
+            <div class="social-icons">
+                <a href="https://www.instagram.com/nabilafitriie/"
+                    ><i class="fa-brands fa-instagram"></i
+                ></a>
+                <a href="https://www.youtube.com/@nabilafitrie5887"
+                    ><i class="fa-brands fa-youtube"></i
+                ></a>
+                <a
+                    href="https://www.linkedin.com/in/nabila-fitrie-naia-salsabila-66b28425b/"
+                    ><i class="fa-brands fa-linkedin"></i
+                ></a>
+            </div>
+            <p>&copy; 2025 Nabila Fitrie. All rights reserved.</p>
+        </footer>
+
+        <!-- Back to Top Button -->
+        <button class="back-to-top" id="backToTop">
+            <i class="fas fa-arrow-up"></i>
+        </button>
+
+        <script>
+            // Back to Top functionality
+            const backToTopBtn = document.getElementById("backToTop");
+
+            window.addEventListener("scroll", () => {
+                if (window.pageYOffset > 300) {
+                    backToTopBtn.classList.add("show");
+                } else {
+                    backToTopBtn.classList.remove("show");
+                }
+            });
+
+            backToTopBtn.addEventListener("click", () => {
+                window.scrollTo({
+                    top: 0,
+                    behavior: "smooth",
+                });
+            });
+        </script>
+    </body>
+</html>

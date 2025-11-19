@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Gallery - Nabila Fitrie</title>
+        <link rel="stylesheet" href="mystyle.css" />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        />
+    </head>
+    <body>
+        <header>
+            <div class="logo">Nabila Fitrie</div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="resume.html">Resume</a></li>
+                    <li><a href="project.html">Projects</a></li>
+                    <li><a href="gallery.html" class="active">Gallery</a></li>
+                </ul>
+            </nav>
+            <a href="contact.html"
+                ><button class="contact-btn">Contact</button></a
+            >
+        </header>
+
+        <main class="gallery-page">
+            <h1 class="page-title">Gallery</h1>
+            <p class="page-subtitle">
+                A collection of my creative work and captured moments
+            </p>
+
+            <!-- Gallery Filter -->
+            <div class="gallery-filter">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="photography">
+                    Photography
+                </button>
+                <button class="filter-btn" data-filter="design">Design</button>
+                <button class="filter-btn" data-filter="events">Events</button>
+            </div>
+
+            <!-- Gallery Grid -->
+            <div class="gallery-grid">
+                <!-- Photography -->
+                <div class="gallery-item" data-category="photography">
+                    <img src="images/flower-1.jpg" alt="Photography Work 1" />
+                    <div class="gallery-overlay">
+                        <h3>Flower Photography</h3>
+                        <p>Event Photography</p>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="photography">
+                    <img
+                        src="images/flash-portrait.jpg"
+                        alt="Photography Work 2"
+                    />
+                    <div class="gallery-overlay">
+                        <h3>Flash Portrait</h3>
+                        <p>Portrait Photography</p>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="photography">
+                    <img
+                        src="images/glass-photography.jpg"
+                        alt="Photography Work 3"
+                    />
+                    <div class="gallery-overlay">
+                        <h3>Product Photography</h3>
+                        <p>Glass Product</p>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="photography">
+                    <img src="images/street-1.jpg" alt="Photography Work 4" />
+                    <div class="gallery-overlay">
+                        <h3>Street Photography</h3>
+                        <p></p>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="photography">
+                    <img src="images/street-2.jpg" alt="Photography Work 5" />
+                    <div class="gallery-overlay">
+                        <h3>Street Photography</h3>
+                        <p></p>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="photography">
+                    <img src="images/nature-1.jpg" alt="Photography Work 6" />
+                    <div class="gallery-overlay">
+                        <h3>Nature Photography</h3>
+                        <p></p>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="photography">
+                    <img src="images/nature-2.jpg" alt="Photography Work 7" />
+                    <div class="gallery-overlay">
+                        <h3>Nature and Street Photography</h3>
+                        <p></p>
+                    </div>
+                </div>
+
+                <!-- Design -->
+                <div class="gallery-item" data-category="design">
+                    <img src="images/magazine.png" alt="Design Work 1" />
+                    <div class="gallery-overlay">
+                        <h3>Magazine's Designer</h3>
+                        <p>Design</p>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="design">
+                    <img src="images/posterdesign1.png" alt="Design Work 2" />
+                    <div class="gallery-overlay">
+                        <h3>Poster Design</h3>
+                        <p>Graphic Design</p>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="design">
+                    <img src="images/bookcover.png" alt="Design Work 3" />
+                    <div class="gallery-overlay">
+                        <h3>Tzu Chi Cover book</h3>
+                        <p>Design</p>
+                    </div>
+                </div>
+
+                <!-- Events -->
+                <div class="gallery-item" data-category="events">
+                    <img src="images/internationalevent.jpeg" alt="Event 1" />
+                    <div class="gallery-overlay">
+                        <h3>International Event</h3>
+                        <p>Feeds the guests at the event</p>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="events">
+                    <img src="images/Halloween.jpg" alt="Event 2" />
+                    <div class="gallery-overlay">
+                        <h3>Halloween Party</h3>
+                        <p>Cosplay contest</p>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="events">
+                    <img src="images/dronetrip.jpg" alt="Event 3" />
+                    <div class="gallery-overlay">
+                        <h3>Drone Operation.</h3>
+                        <p>Event Coverage</p>
+                    </div>
+                </div>
+
+                <!-- Additional Items -->
+
+                <div class="gallery-item" data-category="events">
+                    <img src="images/sportsday.jpg" alt="Design Work 4" />
+                    <div class="gallery-overlay">
+                        <h3>Sports Day</h3>
+                        <p>School Anniversary Celebration</p>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <footer>
+            <div class="social-icons">
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+            </div>
+            <p>&copy; 2025 Nabila Fitrie. All rights reserved.</p>
+        </footer>
+        <!-- Back to Top Button -->
+        <button class="back-to-top" id="backToTop">
+            <i class="fas fa-arrow-up"></i>
+        </button>
+
+        <script>
+            // Gallery Filter
+            const filterBtns = document.querySelectorAll(".filter-btn");
+            const galleryItems = document.querySelectorAll(".gallery-item");
+            // Back to Top functionality
+            const backToTopBtn = document.getElementById("backToTop");
+
+            window.addEventListener("scroll", () => {
+                if (window.pageYOffset > 300) {
+                    backToTopBtn.classList.add("show");
+                } else {
+                    backToTopBtn.classList.remove("show");
+                }
+            });
+
+            backToTopBtn.addEventListener("click", () => {
+                window.scrollTo({
+                    top: 0,
+                    behavior: "smooth",
+                });
+            });
+
+            filterBtns.forEach((btn) => {
+                btn.addEventListener("click", () => {
+                    // Remove active class from all buttons
+                    filterBtns.forEach((b) => b.classList.remove("active"));
+                    // Add active class to clicked button
+                    btn.classList.add("active");
+
+                    const filter = btn.getAttribute("data-filter");
+
+                    galleryItems.forEach((item) => {
+                        if (
+                            filter === "all" ||
+                            item.getAttribute("data-category") === filter
+                        ) {
+                            item.style.display = "block";
+                        } else {
+                            item.style.display = "none";
+                        }
+                    });
+                });
+            });
+        </script>
+    </body>
+</html>

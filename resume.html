@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Resume - Nabila Fitrie</title>
+        <link rel="stylesheet" href="mystyle.css" />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        />
+    </head>
+    <body>
+        <header>
+            <div class="logo">Nabila Fitrie</div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="resume.html" class="active">Resume</a></li>
+                    <li><a href="project.html">Projects</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                </ul>
+            </nav>
+            <a href="contact.html"
+                ><button class="contact-btn">Contact</button></a
+            >
+        </header>
+
+        <main class="resume-page">
+            <h1 class="page-title">Resume</h1>
+
+            <div class="resume-grid">
+                <!-- Left Column -->
+                <div class="resume-main">
+                    <section class="resume-section">
+                        <h2>About Me</h2>
+                        <p>
+                            A dedicated Digital Media & Technology student with
+                            practical experience in graphic design, marketing,
+                            and content creation. Skilled in combining creative
+                            vision with technical expertise to deliver impactful
+                            digital solutions.
+                        </p>
+                        <blockquote class="resume-quote">
+                            <cite
+                                >"Creativity is intelligence having fun. I
+                                believe in turning ideas into reality through
+                                thoughtful design and strategic
+                                execution."</cite
+                            >
+                        </blockquote>
+                    </section>
+
+                    <section class="resume-section">
+                        <h2>Work Experience</h2>
+
+                        <div class="experience-item">
+                            <h3>Teaching Assistant</h3>
+                            <p class="meta">Tzu Chi University • 2025</p>
+                            <p>
+                                Provided academic support for Management,
+                                Corporate Social Responsibility (CSR), and Human
+                                Resource Management courses. Assisted faculty in
+                                preparing materials and enhancing students'
+                                understanding of complex corporate topics.
+                            </p>
+                        </div>
+
+                        <div class="experience-item">
+                            <h3>Field Worker</h3>
+                            <p class="meta">
+                                Indonesia National Statistics Bureau • 2023
+                            </p>
+                            <p>
+                                Conducted large-scale data collection for the
+                                2023 Agricultural Census, ensuring data accuracy
+                                and timely submission. Managed assigned census
+                                territories with strong organizational skills
+                                and adherence to federal protocols.
+                            </p>
+                        </div>
+
+                        <div class="experience-item">
+                            <h3>Service & Hospitality Roles</h3>
+                            <p class="meta">Multiple Locations • 2024</p>
+                            <ul>
+                                <li>
+                                    <strong>Farglory 5-Star Hotel:</strong>
+                                    Executed high-standard waitress and
+                                    housekeeping duties, ensuring exceptional
+                                    guest satisfaction
+                                </li>
+                                <li>
+                                    <strong>Taroko 5-Star Hotel:</strong>
+                                    Provided premium food and beverage service
+                                    in luxury environment
+                                </li>
+                                <li>
+                                    <strong>Mooncake Factory:</strong>
+                                    Contributed to high-volume production during
+                                    seasonal peak
+                                </li>
+                            </ul>
+                        </div>
+                    </section>
+
+                    <section class="resume-section">
+                        <h2>Education</h2>
+                        <div class="experience-item">
+                            <h3>
+                                Bachelor's Degree in Digital Media & Technology
+                            </h3>
+                            <p class="meta">Tzu Chi University • 2023-2027</p>
+                            <p>
+                                Focusing on digital media production, web
+                                technologies, and interactive design. Building
+                                strong foundation in both creative and technical
+                                aspects of digital media.
+                            </p>
+                        </div>
+                    </section>
+                </div>
+
+                <!-- Right Column -->
+                <div class="resume-sidebar">
+                    <section class="sidebar-section">
+                        <h2>Skills</h2>
+                        <div class="skill-list">
+                            <span class="skill-badge">Photoshop</span>
+                            <span class="skill-badge">Unity</span>
+                            <span class="skill-badge">Graphic Design</span>
+                            <span class="skill-badge">Content Creation</span>
+                            <span class="skill-badge">Marketing</span>
+                        </div>
+                    </section>
+
+                    <section class="sidebar-section">
+                        <h2>Technical</h2>
+                        <div class="skill-list">
+                            <span class="skill-badge">HTML/CSS</span>
+                            <span class="skill-badge">UI/UX Design</span>
+                            <span class="skill-badge">AR Development</span>
+                        </div>
+                    </section>
+
+                    <section class="sidebar-section">
+                        <h2>Languages</h2>
+                        <div class="language-item">
+                            <span>Indonesian</span>
+                            <span class="level">Native</span>
+                        </div>
+                        <div class="language-item">
+                            <span>English</span>
+                            <span class="level">Fluent</span>
+                        </div>
+                        <div class="language-item">
+                            <span>Mandarin</span>
+                            <span class="level">Intermediate</span>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </main>
+
+        <footer>
+            <div class="social-icons">
+                <a href="https://www.instagram.com/nabilafitriie/"
+                    ><i class="fa-brands fa-instagram"></i
+                ></a>
+                <a href="https://www.youtube.com/@nabilafitrie5887"
+                    ><i class="fa-brands fa-youtube"></i
+                ></a>
+                <a
+                    href="https://www.linkedin.com/in/nabila-fitrie-naia-salsabila-66b28425b/"
+                    ><i class="fa-brands fa-linkedin"></i
+                ></a>
+            </div>
+            <p>&copy; 2025 Nabila Fitrie. All rights reserved.</p>
+        </footer>
+
+        <!-- Back to Top Button -->
+        <button class="back-to-top" id="backToTop">
+            <i class="fas fa-arrow-up"></i>
+        </button>
+
+        <script>
+            // Back to Top functionality
+            const backToTopBtn = document.getElementById("backToTop");
+
+            window.addEventListener("scroll", () => {
+                if (window.pageYOffset > 300) {
+                    backToTopBtn.classList.add("show");
+                } else {
+                    backToTopBtn.classList.remove("show");
+                }
+            });
+
+            backToTopBtn.addEventListener("click", () => {
+                window.scrollTo({
+                    top: 0,
+                    behavior: "smooth",
+                });
+            });
+        </script>
+    </body>
+</html>

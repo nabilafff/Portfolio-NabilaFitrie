@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Nabila Fitrie - Portfolio</title>
+        <link rel="stylesheet" href="mystyle.css" />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        />
+    </head>
+    <body>
+        <header>
+            <div class="logo">Nabila Fitrie</div>
+            <nav>
+                <ul>
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="resume.html">Resume</a></li>
+                    <li><a href="project.html">Projects</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                </ul>
+            </nav>
+            <a href="contact.html"
+                ><button class="contact-btn">Contact</button></a
+            >
+        </header>
+
+        <main class="main-intro">
+            <!-- Marquee Banner -->
+            <div class="marquee-container">
+                <marquee behavior="scroll" direction="left" scrollamount="5">
+                    ✨ Welcome to my portfolio! • Currently open for freelance
+                    projects • Let's create something amazing together! •
+                </marquee>
+            </div>
+            <section class="intro">
+                <div class="profile-image">
+                    <img src="images/profile.jpg" alt="Nabila Fitrie" />
+                </div>
+                <div class="intro-text">
+                    <h1>Hello, I'm Nabila</h1>
+                    <h2>Digital Media & Technology Student</h2>
+                    <blockquote>
+                        "Combining creativity with technology to craft
+                        compelling digital experiences."
+                    </blockquote>
+                    <p>
+                        I'm a self-taught Graphic Designer, Marketing
+                        Specialist, and Content Creator with hands-on experience
+                        in the industry. Currently pursuing a Bachelor's degree
+                        in Digital Media & Technology at Tzu Chi University,
+                        Taiwan.
+                    </p>
+
+                    <div class="tags">
+                        <span class="tag">Graphic Design</span>
+                        <span class="tag">Marketing</span>
+                        <span class="tag">Content Creation</span>
+                        <span class="tag">Digital Media</span>
+                    </div>
+
+                    <div class="cta-buttons">
+                        <a href="resume.html" class="btn btn-primary"
+                            >View Resume</a
+                        >
+                        <a href="project.html" class="btn btn-secondary"
+                            >See Projects</a
+                        >
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <div class="social-icons">
+                <a href="https://www.instagram.com/nabilafitriie/"
+                    ><i class="fa-brands fa-instagram"></i
+                ></a>
+                <a href="https://www.youtube.com/@nabilafitrie5887"
+                    ><i class="fa-brands fa-youtube"></i
+                ></a>
+                <a
+                    href="https://www.linkedin.com/in/nabila-fitrie-naia-salsabila-66b28425b/"
+                    ><i class="fa-brands fa-linkedin"></i
+                ></a>
+            </div>
+            <p>&copy; 2025 Nabila Fitrie. All rights reserved.</p>
+        </footer>
+
+        <!-- Back to Top Button -->
+        <button class="back-to-top" id="backToTop">
+            <i class="fas fa-arrow-up"></i>
+        </button>
+
+        <script>
+            // Back to Top functionality
+            const backToTopBtn = document.getElementById("backToTop");
+
+            window.addEventListener("scroll", () => {
+                if (window.pageYOffset > 300) {
+                    backToTopBtn.classList.add("show");
+                } else {
+                    backToTopBtn.classList.remove("show");
+                }
+            });
+
+            backToTopBtn.addEventListener("click", () => {
+                window.scrollTo({
+                    top: 0,
+                    behavior: "smooth",
+                });
+            });
+        </script>
+    </body>
+</html>
